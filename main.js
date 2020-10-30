@@ -33,7 +33,8 @@ function init() {
 
 	// Create material with color
 
-	const texture = new THREE.TextureLoader().load("https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg");
+	// const texture = new THREE.TextureLoader().load("https://raw.githubusercontent.com/mrdoob/three.js/master/examples/textures/planets/moon_1024.jpg");
+	const texture = new THREE.TextureLoader().load("https://raw.githubusercontent.com/catherinemds/Moon-rotation/master/luna.jpg");
 	const material = new THREE.MeshBasicMaterial({map: texture});
 
 	cube = new THREE.Mesh(geometry, material);
@@ -49,7 +50,7 @@ function render() {
 	requestAnimationFrame(render);
 
 	//Rotate the sphere
-	cube.rotation.y += 0.01;
+	cube.rotation.y += 0.03;
 
 	renderer.render(scene, camera);
 }
