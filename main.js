@@ -1,18 +1,5 @@
 let camera, scene, renderer, cube;
 
-// var colormap = new THREE.TextureLoader().load("https://raw.githubusercontent.com/pizza3/asset/master/color.png");
-//       var color = new THREE.TextureLoader().load("https://raw.githubusercontent.com/pizza3/asset/master/noise2.jpg");
-//       var noi = new THREE.TextureLoader().load("https://raw.githubusercontent.com/pizza3/asset/master/fluid.jpg");
-
-// let uniforms = {
-// 	time: {
-// 		type: "f",
-// 		value: 1.0,
-// 	},
-// 	resolution: {
-// 		value: new THREE.Vector2(window.innerWidth, window.innerHeight),
-// 	},
-// };
 function init() {
 	//Init scene
 	scene = new THREE.Scene();
@@ -55,10 +42,6 @@ function init() {
 
 	// Position camera
 	camera.position.z = 10;
-
-	// var light = new THREE.PointLight(0xFFFF00);
-	// light.position.set(10, 0, 25);
-	// scene.add(light);
 }
 
 // Draw the scene every time the screen is refreshed
